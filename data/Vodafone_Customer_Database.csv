@@ -1,0 +1,101 @@
+SeniorCitizen,Partner,Dependents,tenure,PhoneService,MultipleLines,InternetService,OnlineSecurity,OnlineBackup,DeviceProtection,TechSupport,StreamingTV,StreamingMovies,Contract,PaperlessBilling,PaymentMethod,MonthlyCharges,TotalCharges,customerID
+0,1,0,51,1,Yes,DSL,No,No,No,Yes,Yes,Yes,Two year,1,Bank transfer (automatic),75.2,3901.25,2824-AHFTR
+0,0,0,11,1,No,DSL,Yes,No,No,Yes,No,No,One year,1,Mailed check,54.6,617.85,9935-CKAFN
+0,0,0,16,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,0,Bank transfer (automatic),20.1,318.6,1434-OSSKL
+0,0,0,34,1,Yes,DSL,No,No,No,Yes,Yes,No,Month-to-month,0,Mailed check,65.0,2157.5,5557-VAUSI
+1,1,0,43,1,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,One year,1,Electronic check,107.55,4533.9,3547-FTCJJ
+0,1,0,25,0,No phone service,DSL,No,No,Yes,No,Yes,No,One year,1,Credit card (automatic),38.1,970.4,6635-PUSNZ
+0,0,1,43,0,No phone service,DSL,Yes,Yes,Yes,No,No,No,Month-to-month,1,Electronic check,40.45,1912.85,7201-CHQXJ
+0,0,0,18,0,No phone service,DSL,No,No,Yes,Yes,No,No,Month-to-month,1,Electronic check,35.2,607.3,4150-SBFHC
+0,0,0,35,1,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,1,Electronic check,25.6,901.25,4814-WJLVE
+0,1,0,41,1,No,Fiber optic,No,Yes,Yes,Yes,No,No,One year,1,Bank transfer (automatic),86.2,3339.05,6820-FGYQP
+1,1,0,1,1,No,Fiber optic,No,No,No,No,No,No,Month-to-month,0,Mailed check,70.85,70.85,3803-NGMHY
+0,0,0,1,1,No,Fiber optic,No,No,No,No,No,No,Month-to-month,0,Electronic check,70.1,70.1,4598-RVUFA
+0,0,1,15,1,No,DSL,Yes,Yes,Yes,Yes,No,No,One year,0,Credit card (automatic),65.6,1010.0,6168-KBXOS
+0,0,0,29,0,No phone service,DSL,No,Yes,No,Yes,No,No,Month-to-month,0,Electronic check,34.3,1004.75,4483-RKXLG
+0,0,0,25,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,1,Mailed check,20.15,536.35,5040-TOTLP
+0,0,0,7,1,Yes,Fiber optic,Yes,No,No,No,No,No,Month-to-month,1,Mailed check,79.65,604.7,6930-FZNCB
+1,0,0,5,1,No,Fiber optic,No,Yes,No,No,Yes,No,Month-to-month,1,Electronic check,84.7,392.5,2796-DERPK
+0,1,1,48,0,No phone service,DSL,Yes,No,Yes,No,No,Yes,One year,0,Credit card (automatic),45.0,2196.3,8668-NZWAS
+1,1,0,72,1,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Two year,1,Bank transfer (automatic),109.55,7920.7,9797-TTIHE
+1,0,0,1,1,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,1,Electronic check,94.0,94.0,1053-YWGNE
+0,1,0,33,1,Yes,Fiber optic,No,Yes,Yes,No,No,Yes,Month-to-month,1,Electronic check,93.35,3092.0,2743-WHQPD
+1,0,0,14,0,No phone service,DSL,No,No,No,No,Yes,Yes,Month-to-month,1,Electronic check,46.35,672.7,3646-OUNAI
+0,1,1,8,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,0,Credit card (automatic),19.65,169.75,1319-CJZUG
+0,0,0,17,1,Yes,Fiber optic,No,No,Yes,Yes,No,No,One year,0,Electronic check,86.75,1410.25,4946-WYCMB
+1,1,0,65,1,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Month-to-month,1,Credit card (automatic),109.4,7227.45,9727-TDMOG
+1,1,0,37,1,No,Fiber optic,No,No,Yes,Yes,Yes,No,Month-to-month,0,Electronic check,90.0,3371.75,7932-ZYTRS
+1,1,0,24,1,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,1,Electronic check,93.55,2264.05,7537-ZQLND
+0,0,0,1,0,No phone service,DSL,No,No,No,No,No,No,Month-to-month,1,Mailed check,24.45,24.45,4681-BAOPA
+0,1,1,33,1,No,DSL,No,Yes,Yes,Yes,Yes,Yes,Two year,0,Credit card (automatic),82.1,2603.1,1964-FXWBG
+0,1,1,49,0,No phone service,DSL,No,Yes,No,No,Yes,Yes,One year,1,Bank transfer (automatic),51.8,2541.25,8953-FDYOM
+0,1,1,56,1,No,DSL,Yes,Yes,Yes,No,No,No,Two year,1,Bank transfer (automatic),59.8,3457.45,8749-UECLL
+0,0,0,2,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,0,Mailed check,20.05,42.7,8651-WBQQB
+0,0,1,14,1,No,DSL,Yes,Yes,Yes,Yes,No,Yes,Two year,0,Bank transfer (automatic),76.1,1054.8,6559-UCEND
+0,0,0,19,1,No,DSL,No,No,Yes,Yes,No,No,Month-to-month,1,Credit card (automatic),55.0,1046.5,4006-HGYLW
+0,0,0,2,1,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,1,Mailed check,79.65,152.7,2604-BZVZY
+0,1,1,71,1,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,1,Mailed check,91.25,6589.6,4872-EMFKB
+0,0,0,28,1,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,1,Electronic check,89.95,2625.55,7209-AKYUH
+1,0,0,45,1,No,Fiber optic,Yes,Yes,No,Yes,No,No,Month-to-month,1,Bank transfer (automatic),85.7,3778.1,8973-EHZPO
+0,0,0,1,1,No,Fiber optic,No,No,No,No,Yes,No,Month-to-month,1,Electronic check,79.65,79.65,6138-BPNWE
+0,0,0,41,1,Yes,DSL,No,No,Yes,Yes,No,Yes,One year,1,Electronic check,68.6,2877.05,9320-CEPRG
+0,1,1,58,1,Yes,Fiber optic,Yes,Yes,No,No,No,Yes,Month-to-month,1,Bank transfer (automatic),93.4,5435.6,2964-YOPBC
+0,0,0,46,1,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,1,Credit card (automatic),74.8,3548.3,9565-IGRIG
+1,0,0,4,1,No,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,1,Electronic check,94.75,422.4,3144-RHITB
+0,0,0,13,0,No phone service,DSL,No,No,Yes,Yes,No,No,Two year,0,Mailed check,35.4,450.4,8508-QOCNN
+0,1,0,72,1,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,0,Bank transfer (automatic),25.65,1887.0,3170-YWWJE
+0,0,0,24,1,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,1,Electronic check,104.15,2494.65,9900-SPZRA
+0,0,0,46,1,Yes,Fiber optic,Yes,Yes,No,No,No,No,Month-to-month,0,Mailed check,84.25,3847.6,5905-YCWGX
+0,0,0,53,1,No,DSL,No,No,Yes,No,No,Yes,One year,1,Electronic check,61.1,3357.9,3546-HPSFQ
+0,0,0,25,1,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,0,Credit card (automatic),24.75,692.1,5325-NGXBQ
+1,0,0,5,1,No,Fiber optic,No,No,Yes,No,Yes,No,Month-to-month,1,Mailed check,84.85,415.55,5533-BIDZE
+1,0,0,5,1,Yes,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,1,Electronic check,89.8,502.6,8239-OLABW
+0,1,1,46,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,1,Bank transfer (automatic),20.2,845.6,3442-OVPDD
+0,1,1,50,0,No phone service,DSL,Yes,No,No,No,Yes,No,Month-to-month,1,Credit card (automatic),39.45,2021.35,6050-JYZBJ
+0,1,0,72,1,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Two year,1,Bank transfer (automatic),104.8,7470.1,5088-RJOWZ
+0,1,1,70,1,Yes,DSL,Yes,No,No,Yes,Yes,Yes,Two year,1,Bank transfer (automatic),80.6,5460.2,3532-YGEUE
+1,0,0,53,1,No,Fiber optic,Yes,Yes,No,Yes,No,Yes,One year,1,Mailed check,96.75,5206.55,7755-ATIYU
+0,1,0,29,1,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,1,Credit card (automatic),75.3,2263.4,5065-GUCWW
+0,1,1,40,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,0,Bank transfer (automatic),20.15,777.35,4644-FXJVW
+1,1,0,43,1,Yes,Fiber optic,No,Yes,Yes,No,Yes,Yes,Month-to-month,1,Electronic check,103.0,4414.3,4652-AFIWZ
+1,1,0,13,1,No,Fiber optic,No,No,No,No,No,No,Month-to-month,1,Electronic check,70.15,916.75,5573-JNRVI
+0,1,1,72,1,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,Two year,0,Credit card (automatic),109.7,8129.3,1452-CZEZG
+0,0,1,4,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,1,Mailed check,20.4,84.75,2776-PIULZ
+0,1,0,3,1,Yes,Fiber optic,No,No,No,No,Yes,Yes,Month-to-month,1,Electronic check,95.2,292.85,2894-KOGSA
+1,0,0,1,0,No phone service,DSL,No,No,No,No,No,No,Month-to-month,1,Electronic check,25.1,25.1,9821-RYTFL
+1,0,0,35,1,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,One year,1,Bank transfer (automatic),110.8,3836.3,6409-QRDXN
+1,0,0,66,1,Yes,Fiber optic,Yes,No,No,No,Yes,Yes,Two year,1,Bank transfer (automatic),102.4,6471.85,7691-ISOER
+0,0,0,6,1,No,DSL,No,No,Yes,No,Yes,No,Month-to-month,0,Mailed check,60.9,414.1,7211-RXQHO
+0,1,0,9,1,No,Fiber optic,No,No,Yes,No,No,No,Month-to-month,1,Bank transfer (automatic),75.75,655.9,1006-HFUPI
+0,1,1,72,1,Yes,DSL,Yes,No,Yes,Yes,Yes,Yes,Two year,1,Credit card (automatic),83.55,6093.3,8238-LFMXU
+0,0,0,9,1,No,DSL,No,No,No,No,No,No,Month-to-month,0,Mailed check,44.95,431.0,3780-RHRQC
+0,1,0,16,1,Yes,Fiber optic,No,No,No,No,Yes,No,Month-to-month,1,Electronic check,84.95,1378.25,4848-RFFAG
+0,1,1,56,0,No phone service,DSL,No,Yes,Yes,No,No,No,One year,1,Credit card (automatic),36.1,1971.5,8784-PTLXO
+1,1,1,66,1,Yes,Fiber optic,Yes,Yes,Yes,Yes,Yes,Yes,One year,1,Electronic check,116.25,7862.25,7291-MGRAT
+0,0,1,31,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,One year,0,Credit card (automatic),20.1,589.25,2746-UFUSM
+1,0,0,27,1,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,Yes,One year,1,Bank transfer (automatic),110.5,2857.6,5082-XDDMN
+0,1,0,21,1,Yes,Fiber optic,No,No,Yes,Yes,Yes,Yes,Month-to-month,1,Electronic check,106.1,2249.95,6198-YXPSN
+0,0,0,1,1,No,DSL,Yes,No,No,No,No,No,Month-to-month,0,Electronic check,47.95,47.95,9976-LEWLT
+0,0,1,45,1,Yes,Fiber optic,No,No,Yes,No,Yes,Yes,Two year,0,Bank transfer (automatic),99.7,4634.35,5543-TNQHC
+0,0,0,13,0,No phone service,DSL,No,No,No,No,No,No,Month-to-month,1,Bank transfer (automatic),25.15,331.85,5681-GIXCD
+1,0,0,5,1,No,Fiber optic,Yes,Yes,No,No,No,No,Month-to-month,0,Electronic check,80.7,374.8,7275-SSBKO
+0,0,0,4,1,No,Fiber optic,Yes,No,Yes,Yes,No,Yes,Month-to-month,1,Bank transfer (automatic),94.4,387.2,7812-BVKUY
+0,0,0,16,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,0,Bank transfer (automatic),20.25,327.45,1320-WTJAJ
+0,0,0,28,0,No phone service,DSL,No,No,Yes,Yes,No,No,Month-to-month,1,Mailed check,35.75,961.4,7389-WYKTO
+0,1,1,8,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,1,Mailed check,19.35,152.6,4613-MHMKR
+1,0,0,66,1,Yes,DSL,Yes,Yes,No,Yes,No,No,One year,1,Credit card (automatic),63.85,4174.35,7624-SVXZN
+0,0,0,44,1,Yes,Fiber optic,No,No,Yes,No,No,Yes,Month-to-month,1,Mailed check,90.4,4063.0,7455-PRCLW
+0,1,0,35,1,No,Fiber optic,No,No,No,No,No,No,Month-to-month,1,Electronic check,70.3,2416.55,3977-BJFIT
+1,1,1,46,1,Yes,Fiber optic,Yes,Yes,No,Yes,Yes,Yes,Month-to-month,1,Electronic check,110.2,4972.1,7211-HYKVM
+0,1,0,68,1,Yes,DSL,Yes,Yes,Yes,Yes,Yes,Yes,Two year,1,Electronic check,91.7,6424.7,9837-BYFBY
+0,0,0,65,1,Yes,Fiber optic,Yes,No,Yes,Yes,Yes,Yes,One year,1,Credit card (automatic),110.0,7138.65,1659-TYFAD
+0,1,1,8,1,No,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Two year,1,Mailed check,19.85,146.6,3068-MCYMG
+0,1,0,19,1,No,Fiber optic,No,No,Yes,No,Yes,Yes,Month-to-month,1,Electronic check,96.8,1743.05,7043-EPTCV
+0,1,1,64,1,Yes,Fiber optic,No,Yes,Yes,Yes,Yes,Yes,One year,1,Electronic check,111.45,7266.95,6096-CAIRY
+0,0,0,15,1,Yes,No,No internet service,No internet service,No internet service,No internet service,No internet service,No internet service,Month-to-month,1,Electronic check,26.35,378.6,7498-YFPVG
+1,1,0,50,1,Yes,Fiber optic,Yes,Yes,Yes,No,Yes,No,One year,1,Bank transfer (automatic),101.9,5265.5,5941-WPDZU
+1,1,0,6,1,No,Fiber optic,No,Yes,No,No,No,Yes,Month-to-month,1,Electronic check,84.2,519.15,6688-NRBQA
+0,1,0,42,1,Yes,DSL,Yes,No,No,Yes,Yes,Yes,One year,0,Credit card (automatic),80.45,3375.9,7882-VCYQV
+1,0,0,7,1,No,DSL,No,Yes,No,No,No,No,Month-to-month,1,Mailed check,51.3,419.35,3506-LTZHV
+1,1,0,51,0,No phone service,DSL,No,Yes,No,No,No,No,Month-to-month,1,Credit card (automatic),29.45,1459.35,9817-UMVPI
+0,1,1,34,1,Yes,Fiber optic,No,No,Yes,No,Yes,No,Month-to-month,0,Electronic check,87.45,2874.15,5022-VCWGM

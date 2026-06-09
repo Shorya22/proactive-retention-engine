@@ -1,0 +1,86 @@
+# Golden Dataset — Retention Engine
+# These are the ground-truth test cases. Run after any prompt or model change to catch regressions.
+# Service must be running: uvicorn app.main:app --port 8000
+
+scenarios:
+
+  # --- Low Risk (should never generate an email) ---
+
+  - id: confirmed_low_risk_long_tenure
+    customer_id: "3170-YWWJE"
+    description: "72-month Two year contract customer. Churn prob 0.003 — should return healthy immediately."
+    expected_status: healthy
+    expected_churn_prob_below: 0.1
+
+  - id: confirmed_low_risk_two_year
+    customer_id: "8749-UECLL"
+    description: "56-month Two year contract. Churn prob 0.01 — no email, no LLM call."
+    expected_status: healthy
+    expected_churn_prob_below: 0.1
+
+  # --- High Risk — Basic Profiles ---
+
+  - id: new_customer_high_risk
+    customer_id: "3803-NGMHY"
+    description: "1-month tenure, Month-to-month, £70.85/mo. Churn prob 0.63 — email should acknowledge early stage."
+    expected_status: retention_triggered
+    expected_churn_prob_above: 0.5
+    expected_email_contains_any:
+      - "Internet"
+      - "connected"
+      - "broadband"
+
+  - id: highest_churn_risk
+    customer_id: "1053-YWGNE"
+    description: "1-month tenure, £94/mo, Streaming TV + Movies + Internet. Churn prob 0.83 — highest in dataset."
+    expected_status: retention_triggered
+    expected_churn_prob_above: 0.75
+    expected_email_contains_any:
+      - "Streaming"
+      - "streaming"
+      - "Internet"
+    expected_tov_compliant: true
+
+  # --- High Risk — Edge Cases ---
+
+  - id: long_tenure_still_high_risk
+    customer_id: "4652-AFIWZ"
+    description: "43-month tenure on Month-to-month, £103/mo, 5 services. Churn prob 0.56 — loyalty language must be strong despite long tenure."
+    expected_status: retention_triggered
+    expected_churn_prob_above: 0.5
+    expected_email_contains_any:
+      - "Streaming"
+      - "years"
+      - "loyal"
+
+  - id: many_services_high_risk
+    customer_id: "9900-SPZRA"
+    description: "5 active services, Month-to-month, £104/mo. Churn prob 0.64 — email must reference multiple services, not invent extras."
+    expected_status: retention_triggered
+    expected_churn_prob_above: 0.5
+    expected_email_contains_any:
+      - "Streaming"
+      - "Backup"
+      - "Internet"
+    expected_tov_compliant: true
+
+  - id: borderline_risk
+    customer_id: "2743-WHQPD"
+    description: "33-month tenure, Month-to-month, £93/mo. Churn prob 0.52 — just above threshold, email tone should still be warm."
+    expected_status: retention_triggered
+    expected_churn_prob_above: 0.5
+
+  # --- Guardrail Coverage ---
+
+  - id: tov_compliant_check
+    customer_id: "2894-KOGSA"
+    description: "3-month tenure, £95.20/mo. Churn prob 0.79 — verify email passes both brand compliance and hallucination guard."
+    expected_status: retention_triggered
+    expected_tov_compliant: true
+    expected_email_subject_max_length: 60
+
+  - id: subject_length_check
+    customer_id: "3144-RHITB"
+    description: "4-month tenure, £94.75/mo. Specifically verify subject line stays within 60 characters."
+    expected_status: retention_triggered
+    expected_email_subject_max_length: 60

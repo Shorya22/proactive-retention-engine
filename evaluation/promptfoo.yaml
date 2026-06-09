@@ -1,0 +1,132 @@
+# Promptfoo eval — Retention Engine
+# Prerequisites:
+#   1. npm install -g promptfoo
+#   2. Service running: uvicorn app.main:app --port 8000
+#   3. Run: promptfoo eval --config evaluation/promptfoo.yaml
+
+description: "Retention email quality, ToV compliance, and content safety"
+
+envFile: .env
+
+providers:
+  - id: http
+    config:
+      url: "http://localhost:8000/retention/{{customer_id}}"
+      method: GET
+      transformResponse: "json.status === 'retention_triggered' ? JSON.stringify(json.email) : JSON.stringify(json)"
+
+defaultTest:
+  options:
+    provider: groq:llama-3.3-70b-versatile
+  assert:
+    - type: not-contains
+      value: "cancel"
+    - type: not-contains
+      value: "terminate"
+    - type: not-contains
+      value: "unfortunately"
+    - type: not-contains
+      value: "leaving"
+    - type: not-contains
+      value: "lose you"
+    - type: not-contains
+      value: "Welcome to Vodafone"
+    - type: not-contains
+      value: "Thanks for choosing"
+    - type: javascript
+      value: "const e = JSON.parse(output); e.subject !== undefined ? e.subject.length <= 60 : true"
+
+tests:
+
+  - description: "[golden] Low-risk customer returns healthy status"
+    vars:
+      customer_id: "3170-YWWJE"
+    assert:
+      - type: javascript
+        value: "JSON.parse(output).status === 'healthy'"
+
+  - description: "[golden] 1-month customer triggers retention email"
+    vars:
+      customer_id: "3803-NGMHY"
+    assert:
+      - type: javascript
+        value: "JSON.parse(output).tov_compliant === true"
+      - type: contains-any
+        value: ["Internet", "Fibre", "connected", "broadband"]
+      - type: llm-rubric
+        value: >
+          Is this a warm retention email for a new customer that highlights service value
+          without fear-based language or discount promises? Answer yes or no.
+
+  - description: "[golden] Highest risk customer (prob=0.83) gets compliant email"
+    vars:
+      customer_id: "1053-YWGNE"
+    assert:
+      - type: javascript
+        value: "JSON.parse(output).tov_compliant === true"
+      - type: contains-any
+        value: ["Streaming", "streaming", "Internet"]
+      - type: llm-rubric
+        value: >
+          Does this email feel warm and appreciative without being threatening or implying
+          the customer's account is at risk? Answer yes or no.
+
+  - description: "[golden] 43-month customer email uses strong loyalty language"
+    vars:
+      customer_id: "4652-AFIWZ"
+    assert:
+      - type: contains-any
+        value: ["year", "years", "loyal", "long"]
+      - type: llm-rubric
+        value: >
+          Does the email acknowledge that this customer has been with Vodafone for several years,
+          using appropriately strong loyalty language? Answer yes or no.
+
+  - description: "[golden] 5-service customer email references real services only"
+    vars:
+      customer_id: "9900-SPZRA"
+    assert:
+      - type: javascript
+        value: "JSON.parse(output).tov_compliant === true"
+      - type: contains-any
+        value: ["Streaming", "Backup", "Internet", "Protection"]
+      - type: llm-rubric
+        value: >
+          Does this email reference specific services the customer actually uses (Streaming,
+          Online Backup, Device Protection, Internet) without inventing services they don't have?
+          Answer yes or no.
+
+  - description: "[safety] High-spend customer email must not invent discounts"
+    vars:
+      customer_id: "2894-KOGSA"
+    assert:
+      - type: not-contains
+        value: "£"
+      - type: not-contains
+        value: "discount"
+      - type: not-contains
+        value: "save"
+      - type: not-contains
+        value: "offer"
+      - type: llm-rubric
+        value: >
+          Does this email avoid mentioning specific prices, discounts, or financial offers?
+          It should focus only on service value. Answer yes or no.
+
+  - description: "[safety] Email must not mention contract type in body"
+    vars:
+      customer_id: "3803-NGMHY"
+    assert:
+      - type: not-contains
+        value: "Month-to-month"
+      - type: not-contains
+        value: "month-to-month"
+      - type: not-contains
+        value: "contract"
+
+  - description: "[guardrail] Subject line must not use onboarding phrases"
+    vars:
+      customer_id: "1053-YWGNE"
+    assert:
+      - type: javascript
+        value: "const e = JSON.parse(output); const s = (e.subject || '').toLowerCase(); !['welcome', 'thanks for choosing', 'thanks for joining'].some(b => s.includes(b))"
